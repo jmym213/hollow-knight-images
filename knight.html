@@ -1,0 +1,104 @@
+<!-- knight.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>小骑士</title>
+    <style>
+        .marquee {
+            background: linear-gradient(to right, #2c3e50, #1a1a1a);
+            color: #ecf0f1;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            overflow: hidden;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .marquee-text {
+            display: inline-block;
+            animation: marquee 12s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #fff;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body><img src="https://i.postimg.cc/9f8v7yjv/hk.gif" alt="网站标志" class="corner-logo">
+
+<style>
+/* 添加到现有CSS中 */
+.corner-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px;  /* 根据实际图片尺寸调整 */
+    height: auto;
+    z-index: 1000;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+    transition: transform 0.3s ease;
+}
+
+.corner-logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* 确保其他内容不被遮挡 */
+body {
+    padding-top: 100px; /* 根据logo高度调整 */
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .corner-logo {
+        width: 60px;
+        top: 10px;
+        left: 10px;
+    }
+    body {
+        padding-top: 80px;
+    }
+}
+</style>
+    <div class="marquee">
+        <span class="marquee-text">欢迎来到空洞骑士的世界，勇敢的小骑士！</span>
+    </div>
+
+        <div class="container">
+        <h1><b><p><i>小骑士</i></P></b></h1>
+ <hr>
+        <img src="https://i.postimg.cc/SNdVRk4P/image.png" alt="小骑士图片">
+        <img src="https://i.postimg.cc/QxJY7cQ0/image.png" alt="简介图片"width="650">
+
+<p>小骑士是一个被抛弃的容器。它是苍白之王与白色夫人结合的产物之一，诞生于深渊，外壳内部盛有虚空。大黄蜂与小骑士同父异母，是它的雌性同胞。小骑士与其他容器同胞一样没有性别。<br>
+<br>
+小骑士从深渊的出生地爬出来时，看到苍白之王正带着它的同胞空洞骑士离开深渊。后来深渊的入口被封印，而小骑士也坠回深渊。在这之后的一段时间里，虽然深渊的入口被关闭，小骑士与它的一些同胞还是成功逃离了深渊。<br>
+<br>
+最后，由于某些原因，小骑士在圣巢的边界之外游荡。在那里停留的时候，小骑士忘记了不少事情，但也增长了韧性。之后，它遵循辐光或是空洞骑士的召唤回到了圣巢。</p>
+    </div>
+</body>
+</html>
